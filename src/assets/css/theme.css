@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
+/* Reset css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nanumSq', 'Noto Sans KR', 나눔고딕, 돋움, Dotum, Tahoma, AppleGothic, sans-serif !important;
+}
+
+/* Global */
+
+.auto-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* UI Element */
+
+
+/* Login */
+
+.login-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/images/login-background.png')
+}
+
+.login-logo {
+    display: inline-block;
+    padding: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* .login-content {
+    width: 1273px;
+    height: 610px;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.login-content {
+    display: flex;
+    position: relative;
+    width: 1273px;
+    height: 610px;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.login-content .login-box {
+    display: block;
+    width: 352px;
+    height: 480px;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-content .login-box h1 {
+    font-size: 45px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    user-select: none;
+}
+
+.login-content .login-box .label {
+    font-size: 12px;
+    opacity: 0.5;
+    text-align: center;
+    font-weight: 100;
+    color: #fff;
+}
+
+.login-content .login-box input {
+    width: 94%;
+    font-size: 14px;
+    line-height: 17px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 15px 10px;
+}
+
+.login-content .login-box .button {
+    font-size: 18px;
+    background: #2EA9E8;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-content .button.okta-login-btn {
+    background: #fff;
+    color: #376CBC;
+    border: 1px solid #376CBC;
+    font-weight: 200;
+}
+
+.login-content::before {
+    content: '';
+    display: block;
+    width: 1273px;
+    height: 610px;
+    border-radius: 10px;
+    background: url('../images/login-box-img.png');
+    opacity: 0.7;
+}
+
+.copy-right {
+    opacity: 0.5;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    user-select: none;
+}
+
+/* Project */
+.project-wrapper .header {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background: linear-gradient(85.83deg, #003563 10.35%, #08569A 45.52%);
+    padding: 0 20px;
+}
+
+.project-wrapper .header .header-left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-wrapper .header .header-left img {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+.project-wrapper .header .header-left span {
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.project-wrapper .header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.project-wrapper .header .header-right img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    cursor: pointer
+}
+
+.project-wrapper .header .header-right .user-info {
+    font-size: 14px;
+    color: #fff;
+    text-align: end;
+    margin-right: 15px;
+}
+
+.project-wrapper .header .header-right .action {
+    display: flex;
+    align-items: center;
+}
+
+.project-wrapper .header .header-right .action img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.project-wrapper .header .header-right .action i {
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.main.hide .side-bar {
+    width: 90px;
+    height: calc(100vh - 100px);
+    padding: 15px;
+}
+
+.main.hide .side-bar .icon-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.main.hide .side-bar .icon-container div:first-child {
+    margin-top: 40px;
+}
+
+.main.hide .side-bar .icon-container div:last-child {
+    margin-top: 390px;
+}
+
+.main.hide .side-bar .icon-container div {
+    width: 50px !important;
+    height: 50px !important; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.main.hide .side-bar .icon-container div:hover {
+    background-color: #97c5f0;
+}
+
+.main.hide .side-bar .icon-container i {
+    color: #08569A;
+    display: block;
+    font-size: 24px;
+}
+
+.main.hide .side-bar .icon-container div>div {
+    display: none;
+}
+
+/* ************************************************************************* */
+
+.main .side-bar {
+    width: 240px;
+    height: calc(100vh - 70px);
+}
+
+.main .side-bar .icon-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.main .side-bar .icon-container div {
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+.main .side-bar .icon-container div:first-child {
+    margin-top: 10px;
+}
+
+.main .side-bar .icon-container div>div {
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.main .side-bar .icon-container div:hover {
+    background-color: #97c5f0;
+}
+
+.main .side-bar .icon-container i {
+    display: none;
+}
+
+
+
+
+
